@@ -1,0 +1,27 @@
+# Terminal
+cd C:\Users\<...>\Downloads\ai_stock
+dir
+dir .\data
+pip show streamlit
+pip3 install streamlit
+streamlit --version
+python -m streamlit --version
+python -m streamlit run app.py
+
+# If it shows scikit-learn module not found in output page try this:
+cd C:\Users\<...>\Downloads\ai_stock
+.venv\Scripts\activate
+pip install scikit-learn
+pip show scikit-learn
+streamlit run app.py
+
+# Creating venv in terminal
+python --version
+pip --version
+cd C:\Users\<...>\Downloads\ai_stock
+python -m venv .venv
+.venv\Scripts\activate
+python -m pip install --upgrade pip
+pip install streamlit scikit-learn pandas numpy matplotlib seaborn
+pip install -r requirements.txt
+streamlit run app.py
